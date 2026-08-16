@@ -51,3 +51,104 @@ body {
   flex: 1;
   
 }
+  .boton-guardar {
+  background-color: var(--primmary-yellow);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+
+}
+
+.boton-guardar:hover {
+  background-color:#a58512;
+}
+
+.boton-imprimir {
+  background-color: var(--primmary-yellow);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  
+}
+
+.boton-imprimir:hover {
+  background-color:#a58512;
+}
+
+.boton-ListarEstudiantes {
+  background-color: var(--primmary-yellow);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  
+}
+
+.boton-ListarEstudiantes:hover {
+  background-color:#a58512;
+}
+.boton-Trasladar {
+  background-color: var(--primmary-yellow);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  
+}
+
+.boton-Trasladar:hover {
+  background-color:#a58512;
+}
+
+.boton-Exportar {
+  background-color: var(--primmary-yellow);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  
+}
+
+.boton-Exportar:hover {
+  background-color:#a58512;
+}
+.boton-Cerrar-sesion {
+  background-color: var(--primmary-yellow);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  
+}
+
+.boton-Cerrar-sesion:hover {
+  background-color:#a58512;
+}
+
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
