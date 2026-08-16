@@ -177,4 +177,9 @@ body {
   padding: 20px;
   border-radius: 10px;
   color: #113a66;
+  transition: background-color 0.2s ease;
+}
+
+.btn_inicio:hover{
+  background-color:#a58512;
 }
