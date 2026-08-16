@@ -51,7 +51,7 @@ body {
   flex: 1;
   
 }
-  .boton-guardar {
+  .boton-amarillo-menu{
   background-color: var(--primmary-yellow);
   color: white;
   border: none;
@@ -62,88 +62,18 @@ body {
   transition: background-color 0.2s ease;
 
 }
-
-.boton-guardar:hover {
+  .boton-amarillo-menu:hover {
   background-color:#a58512;
 }
 
-.boton-imprimir {
-  background-color: var(--primmary-yellow);
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 8px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-  
+.button-final {
+  margin-top: auto;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.boton-imprimir:hover {
-  background-color:#a58512;
-}
-
-.boton-ListarEstudiantes {
-  background-color: var(--primmary-yellow);
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 8px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-  
-}
-
-.boton-ListarEstudiantes:hover {
-  background-color:#a58512;
-}
-.boton-Trasladar {
-  background-color: var(--primmary-yellow);
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 8px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-  
-}
-
-.boton-Trasladar:hover {
-  background-color:#a58512;
-}
-
-.boton-Exportar {
-  background-color: var(--primmary-yellow);
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 8px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-  
-}
-
-.boton-Exportar:hover {
-  background-color:#a58512;
-}
-.boton-Cerrar-sesion {
-  background-color: var(--primmary-yellow);
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 8px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-  
-}
-
-.boton-cerrar-sesion:hover {
-  background-color:#a58512;
-}
 
 
 .button-container {
@@ -178,3 +108,4 @@ body {
   border-radius: 10px;
   color: #113a66;
 }
+
