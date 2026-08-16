@@ -27,5 +27,27 @@
       color: #fff;
       
       z-index: 10;
+        
       }
-    
+    .header-portal {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 25px;
+}
+
+.banner-blue {
+  background-color: var(--primary-blue);
+  width: 90%;
+  height: 60px;
+ 
+}
+body {
+       background-image: url("../assets/img/UEES.png");
+       background-size: cover;
+       background-position: center;
+    }
+    .content-area {
+  flex: 1;
+  
+}
