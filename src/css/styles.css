@@ -1,4 +1,4 @@
-body{
+
    :root {
       --primary-blue: #113a66;
       --dark-bluu: #0b2a4c;
@@ -24,7 +24,8 @@ body{
       flex-direction: column;
       align-items: center;
       padding: 20px 15px;
+      color: #fff;
       
       z-index: 10;
       }
-    }
+    
