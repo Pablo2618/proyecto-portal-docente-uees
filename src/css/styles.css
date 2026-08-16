@@ -1,6 +1,8 @@
 body{
    :root {
       --primary-blue: #113a66;
+      --dark-bluu: #0b2a4c;
+      --primmary-yellow: #f7c820;
     }
 
     * {
