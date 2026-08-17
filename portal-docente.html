@@ -23,7 +23,7 @@
    <aside class="barra-lateral"
       <h3>Panel Docente</h3>
        <div class="button-container">
-          <button id="btn-ListarEstudiantes" class="boton-amarillo-menu">Listar Estudiantes</button>
+          
           <button id="btn-guardar" class="boton-amarillo-menu">Guardar Calificaciones</button>
           <button id="Trasladar" class="boton-amarillo-menu">Trasladar</button>
           <button id="btn-imprimir" class="boton-amarillo-menu">Imprimir Calificaciones</button>
@@ -38,6 +38,25 @@
 
     </aside>
           <main class="content-area">
+            <div class="recuadro-blaco">
+            <section class="Panel-tabla">
+              <h1>Bienvenido al portal docente</h1>
+              <p>Seleccione una opción del menú lateral para comenzar.</p>
+              <button id="btn-ListarEstudiantes" class="boton-amarillo-menu">Listar Estudiantes</button>
+              <table id="tabla-estudiantes" class="tabla-estudiantes">
+                <thead>
+                  <tr>
+                    <th>Nombre</th>
+                    <th>Correo</th>
+                    <th>CIF</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Aquí se agregarán las filas de estudiantes dinámicamente -->
+                </tbody>
+              </table>
+            </section>
+          </div>
       
 
       </main>
