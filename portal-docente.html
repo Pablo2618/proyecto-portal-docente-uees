@@ -20,8 +20,9 @@
       </header>
   </div>
   <div class="main-container">
-   <aside class="barra-lateral"
-      <h3>Panel Docente</h3>
+   <aside class="barra-lateral">
+        
+      <h1 class="titulo-barra-lateral">Portal Docente</h1>
        <div class="button-container">
           
           <button id="btn-guardar" class="boton-amarillo-menu">Guardar Calificaciones</button>
@@ -37,29 +38,27 @@
         </div>  
 
     </aside>
-          <main class="content-area">
-            <div class="recuadro-blaco">
-            <section class="Panel-tabla">
-              <h1>Bienvenido al portal docente</h1>
-              <p>Seleccione una opción del menú lateral para comenzar.</p>
-              <button id="btn-ListarEstudiantes" class="boton-amarillo-menu">Listar Estudiantes</button>
-              <table id="tabla-estudiantes" class="tabla-estudiantes">
-                <thead>
-                  <tr>
-                    <th>Nombre</th>
-                    <th>Correo</th>
-                    <th>CIF</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <!-- Aquí se agregarán las filas de estudiantes dinámicamente -->
-                </tbody>
-              </table>
-            </section>
-          </div>
-      
-
-      </main>
+          <main class="content-area panel-tabla">
+  <div class="recuadro-blanco">
+    <section>
+      <h1>Bienvenido al portal docente</h1>
+      <p>Seleccione una opción del menú lateral para comenzar.</p>
+      <button id="btn-ListarEstudiantes" class="boton-amarillo-menu">Listar Estudiantes</button>
+      <table class="tabla-estudiantes">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Correo</th>
+            <th>CIF</th>
+          </tr>
+        </thead>
+        <tbody id="tabla-estudiantes">
+          <!-- Aquí se agregarán las filas de estudiantes dinámicamente -->
+        </tbody>
+      </table>
+    </section>
+  </div>
+</main>
   </div>
 
 </body>
