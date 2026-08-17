@@ -1,72 +1,100 @@
 <!DOCTYPE html>
 <html lang="es">
      <head>
+          <!-- Configuración básica del documento: codificación de caracteres y adaptación a pantallas -->
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+          <!-- Hoja de estilos externa del proyecto -->
           <link rel="stylesheet" href="src/css/styles.css">
-          <title>Portal Docente - Universidad Evangélica de El Salvador</title> 
-          
+
+          <title>Portal Docente - Universidad Evangélica de El Salvador</title>
      </head>
 
 
 <body>
-  
 
+  <!-- ============================================================
+       ENCABEZADO (HEADER)
+       Contiene la franja azul/amarilla superior y el logo de la UEES.
+       ============================================================ -->
   <div class="content-area">
-  <header class="header-portal">
-    
-        <div class="barra-superior1b"></div>
-        <div class="barra-superior2b"></div>
-        <div class="barra-superior-amarilla"></div>
-   
-        <img src="src/assets/img/logo_uees.png" alt="Logo UEES" class="logo-header"style="position: absolute; top: 15px; right: 25px; height: 100px; width: auto; z-index: 10;">
+    <header class="header-portal">
+          <!-- Franjas decorativas que forman el diseño diagonal del header -->
+          <div class="barra-superior1b"></div>
+          <div class="barra-superior2b"></div>
+          <div class="barra-superior-amarilla"></div>
 
+          <!-- Logo institucional, posicionado en la esquina superior derecha -->
+          <img src="src/assets/img/logo_uees.png" alt="Logo UEES" class="logo-header" style="position: absolute; top: 15px; right: 25px; height: 100px; width: auto; z-index: 10;">
       </header>
   </div>
-  <div class="main-container">
-   <aside class="barra-lateral">
-        
-      <h1 class="titulo-barra-lateral">Portal Docente</h1>
-       <div class="button-container">
-          
-          <button id="btn-guardar" class="boton-amarillo-menu">Guardar Calificaciones</button>
-          <button id="Trasladar" class="boton-amarillo-menu">Trasladar</button>
-          <button id="btn-imprimir" class="boton-amarillo-menu">Imprimir Calificaciones</button>
-          <button id="btn-Exportar-Excel" class="boton-amarillo-menu">Exportar a Excel</button>
-         
 
-        </div>
-        <div class="button-final">
-          <button id="btn-Ajustes" class="boton-amarillo-menu">Ajustes de cuenta</button>
-          <a href="index.html" class="boton-amarillo-menu">Cerrar Sesión</a>
-        </div>  
+
+  <!-- ============================================================
+       CONTENEDOR PRINCIPAL
+       Agrupa la barra lateral (menú) y el contenido central de la página.
+       ============================================================ -->
+  <div class="main-container">
+
+    <!-- ---------- BARRA LATERAL (MENÚ DEL DOCENTE) ---------- -->
+    <aside class="barra-lateral">
+
+      <h1 class="titulo-barra-lateral">Portal Docente</h1>
+
+      <!-- Botones principales del menú -->
+      <div class="button-container">
+        <button id="btn-guardar" class="boton-amarillo-menu">Guardar Calificaciones</button>
+        <button id="Trasladar" class="boton-amarillo-menu">Trasladar</button>
+        <button id="btn-imprimir" class="boton-amarillo-menu">Imprimir Calificaciones</button>
+        <button id="btn-Exportar-Excel" class="boton-amarillo-menu">Exportar a Excel</button>
+      </div>
+
+      <!-- Botones que quedan fijos al fondo de la barra lateral (Ajustes y Cerrar Sesión) -->
+      <div class="button-final">
+        <button id="btn-Ajustes" class="boton-amarillo-menu">Ajustes de cuenta</button>
+        <a href="index.html" class="boton-amarillo-menu">Cerrar Sesión</a>
+      </div>
 
     </aside>
-          <main class="content-area panel-tabla">
-  <div class="recuadro-blanco">
-    <section>
-      <h1>Bienvenido al portal docente</h1>
-      <p>Seleccione una opción del menú lateral para comenzar.</p>
-      <div class="selector-grupo">
-        <label for="select-grupo">Grupo / Materia a calificar:</label>
-        <select id="select-grupo"></select>
-        <button id="btn-ListarEstudiantes" class="boton-amarillo-menu">Listar Estudiantes</button>
+
+    <!-- ---------- CONTENIDO CENTRAL: BIENVENIDA Y TABLA DE ESTUDIANTES ---------- -->
+    <main class="content-area panel-tabla">
+      <div class="recuadro-blanco">
+        <section>
+          <h1>Bienvenido al portal docente</h1>
+          <p>Seleccione una opción del menú lateral para comenzar.</p>
+
+          <!-- Selector de grupo/materia + botón para listar los estudiantes de ese grupo -->
+          <div class="selector-grupo">
+            <label for="select-grupo">Grupo / Materia a calificar:</label>
+            <select id="select-grupo"></select>
+            <button id="btn-ListarEstudiantes" class="boton-amarillo-menu">Listar Estudiantes</button>
+          </div>
+
+          <!-- Tabla donde se listan los estudiantes del grupo elegido -->
+          <table class="tabla-estudiantes">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Correo</th>
+                <th>CIF</th>
+              </tr>
+            </thead>
+            <tbody id="tabla-estudiantes">
+              <!-- Aquí se agregarán las filas de estudiantes dinámicamente -->
+            </tbody>
+          </table>
+
+        </section>
       </div>
-      <table class="tabla-estudiantes">
-        <thead>
-          <tr>
-            <th>Nombre</th>
-            <th>Correo</th>
-            <th>CIF</th>
-          </tr>
-        </thead>
-        <tbody id="tabla-estudiantes">
-          <!-- Aquí se agregarán las filas de estudiantes dinámicamente -->
-        </tbody>
-      </table>
-    </section>
-  </div>
-</main>
-<script src="src/js/main.js"></script>
+    </main>
+
+  </div> <!-- cierra main-container -->
+
+
+
+  <!-- Script principal, cargado al final para asegurar que todo el HTML ya exista -->
+  <script src="src/js/main.js"></script>
 </body>
 </html>
