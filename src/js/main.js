@@ -36,7 +36,7 @@ async function guardarCalificacion(idMatricula, nota) {
 cargarGrupos(); 
 
 
-const botonListarEstudiantes = document.getElementById("btn-listar-estudiantes");
+const botonListarEstudiantes = document.getElementById("btn-ListarEstudiantes");
 botonListarEstudiantes.addEventListener("click", async () => {
   const respuesta = await fetch(`${API_URL}/estudiantes`);
   const estudiantes = await respuesta.json();

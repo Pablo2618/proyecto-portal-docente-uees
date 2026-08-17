@@ -10,13 +10,15 @@
 
 
 <body>
-  <script src="src/js/main.js"></script>
+  
 
   <div class="content-area">
   <header class="header-portal">
+    
         <div class="barra-superior1b"></div>
         <div class="barra-superior2b"></div>
         <div class="barra-superior-amarilla"></div>
+   
         <img src="src/assets/img/logo_uees.png" alt="Logo UEES" class="logo-header"style="position: absolute; top: 15px; right: 25px; height: 100px; width: auto; z-index: 10;">
 
       </header>
@@ -45,7 +47,11 @@
     <section>
       <h1>Bienvenido al portal docente</h1>
       <p>Seleccione una opción del menú lateral para comenzar.</p>
-      <button id="btn-ListarEstudiantes" class="boton-amarillo-menu">Listar Estudiantes</button>
+      <div class="selector-grupo">
+        <label for="select-grupo">Grupo / Materia a calificar:</label>
+        <select id="select-grupo"></select>
+        <button id="btn-ListarEstudiantes" class="boton-amarillo-menu">Listar Estudiantes</button>
+      </div>
       <table class="tabla-estudiantes">
         <thead>
           <tr>
@@ -61,5 +67,6 @@
     </section>
   </div>
 </main>
+<script src="src/js/main.js"></script>
 </body>
 </html>

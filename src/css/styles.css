@@ -197,14 +197,30 @@ tbody tr:hover {
   margin: 0 auto;
 }
 
-#modal-ajustes {
-  border: none;
-  border-radius: 12px;
-  padding: 24px;
-  max-width: 400px;
-  margin: 0 auto;
+.selector-grupo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 16px 0;
+  flex-wrap: wrap;
 }
 
-#modal-ajustes::backdrop {
-  background-color: rgba(0, 0, 0, 0.5);
+.selector-grupo label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.selector-grupo select {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.selector-grupo select:focus {
+  outline: none;
+  border-color: #1a3a6e;
 }

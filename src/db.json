@@ -5,6 +5,12 @@
       "codigo_materia": "PWE-2026",
       "nombre_materia": "Programación Web",
       "horario": "Lunes 07:00 - 10:00 AM"
+    },
+    {
+      "id_grupo": 2,
+      "codigo_materia": "BIO-2026",
+      "nombre_materia": "Biofísica",
+      "horario": "Martes 08:00 - 11:00 AM"
     }
   ],
   "estudiantes": [
@@ -12,13 +18,22 @@
       "id": 1,
       "nombre": "Marcos Reyes",
       "correo": "marcos.reyes@uees.edu.sv",
-      "cif": "20230145"
+      "cif": "20230145",
+      "id_grupo": 1
     },
     {
       "id": 2,
       "nombre": "Dana Martínez",
       "correo": "dana.martinez@uees.edu.sv",
-      "cif": "20230198"
+      "cif": "20230198",
+      "id_grupo": 1
+    },
+    {
+      "id": 3,
+      "nombre": "José Hernández",
+      "correo": "jose.hernandez@uees.edu.sv",
+      "cif": "20230212",
+      "id_grupo": 2
     }
   ],
   "calificaciones": []
