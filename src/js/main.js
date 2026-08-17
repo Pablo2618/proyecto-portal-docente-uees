@@ -15,7 +15,6 @@ function pintarGrupos(grupos) {
         <td>${grupo.codigo_materia}</td>
         <td>${grupo.nombre_materia}</td>
         <td>${grupo.horario}</td>
-        <td>${grupo.total_estudiantes}</td>
       </tr>
     `;
   });
@@ -34,4 +33,18 @@ async function guardarCalificacion(idMatricula, nota) {
   console.log("Guardado:", resultado);
 }
 
-cargarGrupos();
+cargarGrupos(); 
+
+
+const botonListarEstudiantes = document.getElementById("btn-listar-estudiantes");
+botonListarEstudiantes.addEventListener("click", async () => {
+  const respuesta = await fetch(`${API_URL}/estudiantes`);
+  const estudiantes = await respuesta.json();
+  pintarEstudiantes(estudiantes);
+});
+
+
+
+
+
+
