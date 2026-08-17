@@ -70,23 +70,3 @@ botonListarEstudiantes.addEventListener("click", async () => {
   // Dibuja los estudiantes en su tabla correspondiente
   pintarEstudiantes(estudiantes);
 });
-
-
-// Busca el botón que abre el modal de "Ajustes de cuenta"
-const btnAjustes = document.querySelector("#btn-Ajustes");
-
-// Busca el botón "Salir" que está dentro del modal
-const salirAjustes = document.querySelector("#btn-SalirAjustes");
-
-// Busca el elemento <dialog> del modal de ajustes
-const modal = document.querySelector("#modal-ajustes");
-
-// Al hacer clic en "Ajustes de cuenta", abre el modal
-btnAjustes.addEventListener("click", () => {
-  modal.showModal();
-});
-
-// Al hacer clic en "Salir" (dentro del modal), lo cierra
-salirAjustes.addEventListener("click", () => {
-  modal.close();
-});
