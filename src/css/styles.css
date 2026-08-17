@@ -196,3 +196,15 @@ tbody tr:hover {
   max-width: 900px;
   margin: 0 auto;
 }
+
+#modal-ajustes {
+  border: none;
+  border-radius: 12px;
+  padding: 24px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#modal-ajustes::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}

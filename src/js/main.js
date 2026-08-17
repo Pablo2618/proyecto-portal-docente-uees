@@ -44,7 +44,17 @@ botonListarEstudiantes.addEventListener("click", async () => {
 });
 
 
+const btnAjustes = document.querySelector("#btn-Ajustes");
+const salirAjustes = document.querySelector("#btn-SalirAjustes");
+const modal = document.querySelector("#modal-ajustes");
 
+btnAjustes.addEventListener("click", () => {
+  modal.showModal();
+});
+
+salirAjustes.addEventListener("click", () => {
+  modal.close();
+});
 
 
 

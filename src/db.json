@@ -1,0 +1,25 @@
+{
+  "grupos": [
+    {
+      "id_grupo": 1,
+      "codigo_materia": "PWE-2026",
+      "nombre_materia": "Programación Web",
+      "horario": "Lunes 07:00 - 10:00 AM"
+    }
+  ],
+  "estudiantes": [
+    {
+      "id": 1,
+      "nombre": "Marcos Reyes",
+      "correo": "marcos.reyes@uees.edu.sv",
+      "cif": "20230145"
+    },
+    {
+      "id": 2,
+      "nombre": "Dana Martínez",
+      "correo": "dana.martinez@uees.edu.sv",
+      "cif": "20230198"
+    }
+  ],
+  "calificaciones": []
+}
