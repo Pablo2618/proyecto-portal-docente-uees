@@ -86,6 +86,7 @@ body {
        background-image: url("../assets/img/UEES1.jpg");
        background-size: cover;
        background-position: center;
+       background-repeat: no-repeat;
     }
     .content-area {
   flex: 1;
