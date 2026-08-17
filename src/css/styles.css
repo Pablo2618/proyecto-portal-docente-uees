@@ -1,25 +1,25 @@
 
    :root {
 --azul-primario: #1c5088;
-      --azul-oscuro: #123f6e;
+      --azul-oscuro: #123f6e;    /* Paleta de colores */
       --amarillo-primario: #f7c820;
 
     * {
-      box-sizing: border-box;
+      box-sizing: border-box;/* Incluye el padding y border dentro del ancho/alto total de los elementos */
       margin: 0;
       padding: 0;
       font-family: sans-serif;
     }
 
     .main-container {
-      display: flex;
+      display: flex;/* Convierte el contenedor en Flexbox para organizar sus hijos en fila */
       min-height: 100vh;
       margin-left: 220px;
       padding-top: 20px;
     }
   
    .barra-lateral {
-  position: fixed;
+  position: fixed;/* La fija en la pantalla; no se moverá al hacer scroll en la página */
   color: white;
   top: 0;
   left: 0;
@@ -28,36 +28,37 @@
   background-color: #1a3a6e;
   box-sizing: border-box;
   padding: 20px;
-  z-index: 100;
+  z-index: 100;/* Sirve de referencia para elementos con posición absoluta dentro */
   overflow-y: auto;
-  display: flex;
+  display: flex;/* Activa Flexbox interno */
   flex-direction: column;
 }
     .header-portal {
   width: 100%;
-  display: flex;
+  display: flex;/* Activa Flexbox */
    flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-  position: relative;
+  justify-content: flex-end;/* Empuja el contenido hacia la parte inferior */
+  align-items: flex-end;/* Alinea el contenido a la derecha */
+  position: relative;/* Sirve de referencia para elementos con posición absoluta dentro */
+}
 }
 
-}
 
 .barra-superior1b {
   background-color: var(--azul-oscuro);
   width: 75%;
   height: 140px;
-  clip-path: polygon(4% 0%, 100% 0%, 100% 100%, 0% 100%);
-  border-bottom-left-radius: 20px;
-  z-index: 1;
-  display: flex;
-  justify-content: flex-end;
+  clip-path: polygon(4% 0%, 100% 0%, 100% 100%, 0% 100%);/* Recorta la figura dando un corte diagonal a la izquierda */
+  border-bottom-left-radius: 20px;/* Redondea la esquina inferior izquierda */
+  z-index: 1;/* Nivel de capa 1 */
+  display: flex;/* Activa Flexbox */
+  justify-content: flex-end;/* Alinea el contenido a la derecha */
   align-items: center;
-  padding-right: 25px;
+  padding-right: 25px;/* Espacio interno a la derecha */
 }
+
 .logo-header {
- position: absolute;
+ position: absolute;/* Posicionamiento libre respecto a .header-portal */
   top: 15px;
   right: 25px;
   height: 80px;         
@@ -90,6 +91,7 @@ body {
        background-size: cover;
        background-position: center;
        background-repeat: no-repeat;
+       min-height: 100vh;
     }
   .content-area {
 
@@ -104,8 +106,8 @@ body {
   padding: 10px 20px;
   border-radius: 8px;
   font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
+  cursor: pointer;/* Cambia el cursor a mano al pasar por encima */
+  transition: background-color 0.2s ease;/* Transición suave de 0.2s al cambiar de color */
   text-decoration: none;
 
 }
