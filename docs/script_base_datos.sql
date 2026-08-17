@@ -44,7 +44,10 @@ id_asignatura   INTEGER         NOT NULL REFERENCES asignaturas(id_asignatura) O
 id_docentes     INTEGER         NOT NULL REFERENCES docentes(id_docentes) ON DELETE RESTRICT,
 codigo_grupo	VARCHAR(10)		NOT NULL,
 ciclo         VARCHAR(10)     NOT NULL,
-horario         VARCHAR(60)    
+horario         VARCHAR(60),    
+total_estudiantes   SMALLINT    NOT NULL DEFAULT 30 CHECK (total_estudiantes > 0),
+--se usa UNIQUE para evitar repetir grupos
+UNIQUE (id_asignatura, codigo_grupo, ciclo)
 );
 
 CREATE TABLE evaluaciones(
@@ -53,7 +56,8 @@ id_evaluacion   SERIAL PRIMARY KEY,
 id_grupo    INTEGER     NOT NULL REFERENCES grupos(id_grupo) ON DELETE CASCADE,
 nombre_evaluacion   VARCHAR(120)    NOT NULL,
 --en NUMERIC los numeros 5,2 son de la cantidad de digitos y cantidad de decimales que puede tener el valor respectivamente
-ponderacion     NUMERIC(5,2)    NOT NULL CHECK (ponderacion > 0 AND ponderacion <=100)
+ponderacion     NUMERIC(5,2)    NOT NULL CHECK (ponderacion > 0 AND ponderacion <=100),
+estado      VARCHAR(15)     NOT NULL DEFAULT 'BORRADOR' CHECK (estado IN ('BORRADOR', 'PUBLICADO', 'TRASLADADO'))
 );
 
 CREATE TABLE matriculas (
